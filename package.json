@@ -4,7 +4,7 @@
   "description": "Odin toy project: testing practice",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --verbose"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
