@@ -1,4 +1,4 @@
-import caesarCipher from "../scripts/caesarCipher.js";
+import caesarCipher from "../scripts/caesar-cipher.js";
 
 describe("caesar-cipher test", () => {
   it("function exists", () => {
