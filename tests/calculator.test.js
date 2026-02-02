@@ -63,6 +63,7 @@ describe("calculator test", () => {
 
   it("exceptions", () => {
     const methods = Object.keys(calculator);
+    let bigNumber = BigInt(1);
     methods.forEach((method) => {
       expect(() => calculator[method]("a", "b")).toThrow(TypeError);
       expect(() => calculator[method]("a", 1)).toThrow(TypeError);
@@ -70,6 +71,7 @@ describe("calculator test", () => {
       expect(() => calculator[method]("", "")).toThrow(TypeError);
       expect(() => calculator[method](NaN, NaN)).toThrow(TypeError);
       expect(() => calculator[method](null, null)).toThrow(TypeError);
+      expect(() => calculator[method](bigNumber, 1)).toThrow(TypeError);
     });
   });
 });
